@@ -29,20 +29,24 @@ body {
     width: 450px;
 }
 
-/* .pattern-background-desktop {
-    position: relative;
-    top: 500px
-} */
+.pattern-background-desktop {
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
 
 .big-box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 .illustration-hero {
     border-radius: 15px 15px 0 0;
+    z-index: 200;
 }
 
 h1 {
@@ -51,6 +55,7 @@ h1 {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 900;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 p {
@@ -58,23 +63,88 @@ p {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
-
 }
 
 .description {
     text-align: center;
 }
 
+.music-icon {
+    padding-right: 20px;
+}
+
 .price {
     background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    margin: 25px 0 30px 0;
+}
+
+.price-info {
+    padding-right: 100px;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+
+.change-button {
+    color: var(--bright-blue);
+    font-size: 14px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.change-button:hover {
+    color: #766cf1;
+}
+
+.payment-button {
+    background-color: var(--bright-blue);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    border-style: none;
+    padding: 20px 110px 20px 110px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 20px 20px 10px var(--pale-blue);
+    cursor: pointer;
+}
+
+.payment-button:hover {
+    background-color: #766cf1;
+}
+
+.cancel-order-link {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel-order-link:hover {
+    color: var(--dark-blue);
 }
 
 /* Attribution */
 .attribution {
     font-size: 11px;
     text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--bright-blue);
 }
