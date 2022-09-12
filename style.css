@@ -1,0 +1,80 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* General */
+body {
+    background-color: var(--pale-blue);
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding: 45px;
+    width: 450px;
+}
+
+/* .pattern-background-desktop {
+    position: relative;
+    top: 500px
+} */
+
+.big-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.illustration-hero {
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 29px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+
+}
+
+.description {
+    text-align: center;
+}
+
+.price {
+    background-color: var(--very-pale-blue);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
