@@ -47,6 +47,7 @@ body {
 .illustration-hero {
     border-radius: 15px 15px 0 0;
     z-index: 200;
+    display: block;
 }
 
 h1 {

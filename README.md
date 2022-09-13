@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-On top of more CSS positioning practice, I also learned how to incorporate a design element into the background.
+On top of more CSS positioning practice, I learned how to incorporate a design element into the background. I also learned how to close up a gap between an image and a div (even when padding and margins are set to 0). Just use display: block on the image.
 
 ### Continued development
 
